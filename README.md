@@ -10,11 +10,8 @@ Click on each section below to jump directly to the code files.
 <summary>Handwritten Digit Classifier (MLP)</summary>
 <br>
 
-* [View Source Code File](src/MNIST-Neural-Net)
+* [View Source Code File](src/MNIST-Neural-Net/neuralnet.py)
 
 </details>
 
-<details>
-<summary>Titanic Survival Predictor (Binary Classification)</summary>
-<br>
 
