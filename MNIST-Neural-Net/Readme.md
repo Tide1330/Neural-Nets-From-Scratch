@@ -13,8 +13,8 @@ The network is a three-layer dense architecture designed to classify 28x28 grays
 ### Solving the "Dying ReLU" Problem
 In my early tests, I ran into the "dying ReLU" problem where neurons would just stop learning. To fix this, I switched to **Leaky ReLU** ($f(x) = \max(0.01x, x)$) for the hidden layers. This small change ensures that even if a neuron has a negative input, it still allows a tiny bit of gradient to flow, keeping the learning process alive and robust.
 
-### Softmax & Error Calculation
-For the output layer, I used **Softmax** to turn the network's raw scores into actual probabilities. For the math nerds: the gradient calculation ($A_3 - Y$) makes the backpropagation pass incredibly clean when paired with one-hot encoded labels.
+### Third layer for deep learning
+In a dataset like this one there are many patterns your model has to be aware of. While Samson's original architecture used only two nodes, I realised that in order to get a higher accuracy it would be more benificial to add a third layer for better pattern recognition.
 
 ## Results
 
@@ -22,6 +22,7 @@ By tweaking the architecture—specifically adding Leaky ReLU, using He-style we
 
 *   **Accuracy:** 95%
 *   **Improvement:** A 10% jump from the 85% accuracy in the original tutorial.
+*   As you can see I only ran the training process untill it hit the 95% threshhold I wanted, I suspect that given more time and a slight bit more optimization you can easily take this higher it would just take a longer time to train :)
 
 ## How to Run It
 
