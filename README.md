@@ -1,7 +1,4 @@
-Built a neural network from scratch
- /\_/\
-( o.o )
- > ^ <
+Built a neural network from scratch :)
 
 
 
